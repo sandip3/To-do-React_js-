@@ -1,16 +1,50 @@
-# React + Vite
+# 📝 React To-Do App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet powerful **To-Do application** built using **ReactJS**.  
+This project helped me understand key React concepts like **state management**, **two-way binding**, **conditional rendering**, and **component structuring** — all while building something practical and fun!  
 
-Currently, two official plugins are available:
+Currently, I'm working on **deploying it via GitHub Pages**, so only the source code is available for now. 🚧  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ⚙️ Features  
+- ➕ **Add Tasks** – dynamically add new tasks using component state  
+- 👀 **View All Tasks** – display tasks in a clean, structured UI  
+- ❌ **Delete Tasks** – remove tasks instantly with state updates  
+- ✅ **Mark as Complete / Incomplete** – toggle task status easily  
+- 🎨 **Styled with BEM & Tailwind CSS** – clean, modular, and responsive design  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Tech Stack  
+- **ReactJS**  
+- **CSS (BEM + Tailwind Integration)**  
+- **Nano ID** – for generating unique task IDs  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Future Plans  
+- Host the project live via **GitHub Pages**  
+- Add **Edit Task** functionality  
+- Implement **Local Storage** to persist tasks  
+- Add a **Filter (All / Completed / Pending)** view  
+
+---
+
+## 📸 Preview  
+A glimpse of my React To-Do App in action 👇  
+
+![](./public/Day%2076-77.gif)
+
+---
+
+## 👨‍💻 About This Project  
+Part of my **#100DaysOfCode** journey with **Sheryians Coding School**, guided by **Dhanesh Parwati Malviya Sir**.  
+Through this project, I learned how to manage data flow, handle state efficiently, and make React components interact dynamically.  
+
+---
+
+### 💬 Connect with Me  
+If you’re also learning **React** or building your own projects, let’s connect and grow together! 🚀  
+
+#ReactJS #ToDoApp #FrontendDevelopment #TailwindCSS #WebDevelopment #JavaScript #100DaysOfCode #CodingJourney #Lea
