@@ -1,24 +1,32 @@
 import { nanoid } from 'nanoid';
-import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const Create = props => {
-  //   const todos = props.todos;
+  const todos = props.todos;
   const settodos = props.settodos;
 
-  const [task, settask] = useState('');
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
-  const add_task = e => {
-    e.preventDefault();
+  const add_task = data => {
+    data.id = nanoid();
+    data.iscomplete = false;
 
-    let temp_task = {
-      id: nanoid(),
-      task,
-      iscomplete: false,
-    };
+    const temp_todo = [...todos];
+    temp_todo.push(data);
+    settodos(temp_todo);
 
-    settodos(x => [...x, temp_task]);
-    settask('');
+    toast.success("Todo Created!!")
+
+    reset();
   };
+
+  console.error(errors);
 
   return (
     <div className='w-[55%] border p-8 rounded-[40px] flex flex-col justify-center'>
@@ -26,20 +34,25 @@ const Create = props => {
         Create <span className='text-orange-400 font-bold text-7xl'>Task</span> to Track your Goal
       </h1>
 
-      <form onSubmit={add_task}>
+      <form
+        className='pt-10'
+        onSubmit={handleSubmit(add_task)}>
         <input
-          className='my-10 text-3xl p-4 outline-0 border-b-2 text-4xl  focus:border-b-4 '
-          onChange={e => {
-            settask(e.target.value);
-          }}
-          value={task}
+          {...register('task', { required: 'Enter Task' })}
+          className='mb-4 text-3xl p-4 outline-0 border-b-2 text-4xl  focus:border-b-4 '
           type='text'
           placeholder='Enter Task'
         />
+        <br />
+        {errors?.task?.message && (
+        <span className='text-xl text-center font-bold text-red-500 bg-red-100 p-2 rounded'>
+          {errors?.task?.message}
+        </span>)
+        }
 
         <br />
 
-        <button className='border-2 rounded-xl p-3 text-3xl hover:bg-amber-50 hover:text-black hover:font-bold '>
+        <button className='mt-10 border-2 rounded-xl p-3 text-3xl hover:bg-amber-50 hover:text-black hover:font-bold '>
           Create Todo
         </button>
       </form>

@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const Read = props => {
   const todos = props.todos;
   const settodos = props.settodos;
@@ -5,6 +7,7 @@ const Read = props => {
   const delete_todo = id => {
     let todo_list = todos.filter(x => x.id !== id);
     settodos(todo_list);
+    toast.error('Todo Created!!');
   };
 
   const complete_toggle = id => {
