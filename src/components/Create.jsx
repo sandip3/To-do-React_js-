@@ -1,10 +1,11 @@
 import { nanoid } from 'nanoid';
+import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import { todoContext } from '../Wrapper';
 
-const Create = props => {
-  const todos = props.todos;
-  const settodos = props.settodos;
+const Create = () => {
+  const [todos, settodos] = useContext(todoContext);
 
   const {
     register,
@@ -21,12 +22,12 @@ const Create = props => {
     temp_todo.push(data);
     settodos(temp_todo);
 
-    toast.success("Todo Created!!")
+    toast.success('Todo Created!!');
 
     reset();
   };
 
-  console.error(errors);
+  // console.error(errors);
 
   return (
     <div className='w-[55%] border p-8 rounded-[40px] flex flex-col justify-center'>
@@ -45,10 +46,10 @@ const Create = props => {
         />
         <br />
         {errors?.task?.message && (
-        <span className='text-xl text-center font-bold text-red-500 bg-red-100 p-2 rounded'>
-          {errors?.task?.message}
-        </span>)
-        }
+          <span className='text-xl text-center font-bold text-red-500 bg-red-100 p-2 rounded'>
+            {errors?.task?.message}
+          </span>
+        )}
 
         <br />
 
