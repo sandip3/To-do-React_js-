@@ -1,50 +1,60 @@
-# 📝 React To-Do App  
+# React To-Do App ✅
 
-A simple yet powerful **To-Do application** built using **ReactJS**.  
-This project helped me understand key React concepts like **state management**, **two-way binding**, **conditional rendering**, and **component structuring** — all while building something practical and fun!  
+A simple and responsive To-Do application built with ReactJS and Tailwind CSS.
 
-Currently, I'm working on **deploying it via GitHub Pages**, so only the source code is available for now. 🚧  
+## 🚀 Live Demo
+
+🌐 [View Live Project](https://todo-sandy.netlify.app/)
+
+## 💻 Source Code
+
+🔗 [GitHub Repository](https://github.com/sandip3/To-do-React_js-)
+
+## 🛠️ Technologies Used
+
+- ReactJS
+- Tailwind CSS
+- React Hook Form
+- Nano ID
+- React Toastify
+
+## ✨ Features
+
+- ➕ Add new tasks
+- 👀 View all tasks
+- ❌ Delete tasks
+- ✅ Mark tasks as complete or incomplete
+- 🆔 Generate unique task IDs using Nano ID
+- 📱 Responsive UI
+- 🎨 Styled with Tailwind CSS
+- 🔔 User notifications with React Toastify
+
+## 📚 What I Practiced
+
+- React component-based development
+- State management using `useState`
+- Conditional rendering
+- Handling user interactions and events
+- Form handling with React Hook Form
+- Generating unique IDs with Nano ID
+- Displaying notifications with React Toastify
+- Building responsive interfaces with Tailwind CSS
+
+## 🔮 Future Improvements
+
+- ✏️ Add edit task functionality
+- 💾 Add Local Storage for task persistence
+- 🔍 Add task filtering:
+  - All
+  - Completed
+  - Pending
+
+## 📌 Deployment
+
+The project is currently hosted on **Netlify**.
+
+The source code is available on GitHub. The project is not hosted using GitHub Pages.
 
 ---
 
-## ⚙️ Features  
-- ➕ **Add Tasks** – dynamically add new tasks using component state  
-- 👀 **View All Tasks** – display tasks in a clean, structured UI  
-- ❌ **Delete Tasks** – remove tasks instantly with state updates  
-- ✅ **Mark as Complete / Incomplete** – toggle task status easily  
-- 🎨 **Styled with BEM & Tailwind CSS** – clean, modular, and responsive design  
-
----
-
-## 🧠 Tech Stack  
-- **ReactJS**  
-- **CSS (BEM + Tailwind Integration)**  
-- **Nano ID** – for generating unique task IDs  
-
----
-
-## 🚀 Future Plans  
-- Host the project live via **GitHub Pages**  
-- Add **Edit Task** functionality  
-- Implement **Local Storage** to persist tasks  
-- Add a **Filter (All / Completed / Pending)** view  
-
----
-
-## 📸 Preview  
-A glimpse of my React To-Do App in action 👇  
-
-![](./public/Day%2076-77.gif)
-
----
-
-## 👨‍💻 About This Project  
-Part of my **#100DaysOfCode** journey with **Sheryians Coding School**, guided by **Dhanesh Parwati Malviya Sir**.  
-Through this project, I learned how to manage data flow, handle state efficiently, and make React components interact dynamically.  
-
----
-
-### 💬 Connect with Me  
-If you’re also learning **React** or building your own projects, let’s connect and grow together! 🚀  
-
-#ReactJS #ToDoApp #FrontendDevelopment #TailwindCSS #WebDevelopment #JavaScript #100DaysOfCode #CodingJourney #Lea
+Built while learning ReactJS at **Sheryians Coding School**.
